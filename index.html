@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        margin: auto;
+      }
+      .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px;
+        padding: 2px;
+        border-bottom: 3px solid black;
+      }
+
+      .enlaces {
+        display: flex;
+        padding-top: 4px;
+        margin-right: 30px;
+      }
+
+      a {
+        padding: 10px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        border-bottom: 3px solid orange;
+      }
+      .enlace {
+        display: flex;
+        margin-right: 500px;
+      }
+      .avatar {
+        width: 35px;
+        border: 1px solid orange;
+        border-radius: 20px;
+        position: relative;
+        top: -11px;
+      }
+      .cart {
+        width: 22px;
+      }
+      .box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .box .imagen {
+        width: 30%;
+        display: flex;
+        border-radius: 15px;
+        margin-top: 50px;
+        margin-left: 15%;
+      }
+      .imagen2 {
+        width: 6%;
+        padding: 20px;
+        border-radius: 30%;
+      }
+      .imagen3 {
+        padding: 10px;
+        margin-left: 170px;
+      }
+      .title {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        font-size: 19px;
+        color: orange;
+      }
+      .title2 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+      }
+      .subtitle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: gray;
+      }
+      .price {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .discount {
+        position: absolute;
+        left: 120%;
+        font-size: 17px;
+        color: orange;
+        background-color: rgb(237, 241, 244);
+      }
+      .price2 {
+        position: absolute;
+        left: 50%;
+        top: 68%;
+        color: gray;
+        text-decoration: line-through;
+      }
+      .add {
+        position: absolute;
+        left: 59%;
+        top: 75%;
+        border-radius: 3px;
+        width: 169px;
+        text-align: center;
+        background-color: hsl(26, 100%, 55%);
+      }
+      .add img {
+        margin-right: 5px;
+        width: 8%;
+        text-decoration: none;
+      }
+      .operator {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 169px;
+        height: 44px;
+        text-align: center;
+        border-radius: 3px;
+        background-color: hsl(240, 17%, 90%);
+      }
+      .operator img {
+        width: 7%;
+        margin: 20px;
+      }
+      .cero {
+        position: absolute;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./images/logo.svg" alt="Snakers" style="width: 10%" />
+        <ul class="enlaces">
+          <div class="enlace">
+            <a href="">Collections</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+          <a href=""
+            ><img src="./images/icon-cart.svg" alt="" class="cart"
+          /></a>
+          <a href=""
+            ><img src="./images/image-avatar.png" alt="" class="avatar"
+          /></a>
+        </ul>
+      </div>
+      <div class="box">
+        <h1 class="title">Sneakers Company</h1>
+        <h2 class="title2">
+          Fall Limited Edition <br />
+          Sneakers
+        </h2>
+        <p class="subtitle">
+          These low-profile sneakers are your perfect casual wear <br />
+          companion. Featuring a durable rubber outer sole, they’ll <br />
+          withstand everything the weather can offer.
+        </p>
+        <h4 class="price">
+          <span class="">$125.00</span> <span class="discount">50%</span>
+        </h4>
+        <h5 class="price2">$250.00</h5>
+        <a href="" class="add"
+          ><img src="./images/icon-cart.svg" alt="" />Add to cart</a
+        >
+        <div class="operator">
+          <span class="menos"
+            ><img src="./images/icon-minus.svg" alt=""
+          /></span>
+          <span class="cero">0</span>
+          <span class="mas"><img src="./images/icon-plus.svg" alt="" /></span>
+        </div>
+        <img src="./images/image-product-1.jpg" alt="Shoes" class="imagen" />
+      </div>
+      <div class="imagen3">
+        <img
+          src="./images/image-product-1-thumbnail.jpg"
+          alt="Shoes"
+          class="imagen2"
+        />
+        <img
+          src="./images/image-product-2-thumbnail.jpg"
+          alt="Shoes"
+          class="imagen2"
+        />
+        <img
+          src="./images/image-product-3-thumbnail.jpg"
+          alt="Shoes"
+          class="imagen2"
+        />
+        <img
+          src="./images/image-product-4-thumbnail.jpg"
+          alt="Shoes"
+          class="imagen2"
+        />
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
