@@ -16,6 +16,10 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      /* Importa la fuente Kumbh Sans desde Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+      /* Aplica la fuente Kumbh Sans a los elementos deseados */
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -26,18 +30,20 @@
       * {
         margin: 0px;
         padding: 0px;
+        overflow: hidden;
       }
       body {
         display: flex;
+
+        font-family: "Kumbh Sans";
         margin: auto;
       }
       .container {
         width: 100%;
+        margin: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 40px;
-        padding: 2px;
         border-bottom: 3px solid black;
       }
 
@@ -45,6 +51,7 @@
         display: flex;
         padding-top: 4px;
         margin-right: 30px;
+        font-family: "Kumbh Sans";
       }
 
       a {
@@ -70,6 +77,8 @@
       .cart {
         width: 22px;
       }
+      .cart:hover {
+      }
       .box {
         width: 100%;
         display: flex;
@@ -89,8 +98,19 @@
         border-radius: 30%;
       }
       .imagen3 {
-        padding: 10px;
-        margin-left: 170px;
+        display: inline-block;
+        margin-left: 13%;
+      }
+      .imagen3 img {
+        margin: 20px;
+        width: 60px;
+        padding: 0px 2px 0px 2px;
+        transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+      }
+
+      .imagen3 img:hover {
+        width: 60px;
+        box-shadow: 0px 0px 0px 4px orange; /* Agrega un borde de 4px de color naranja en el hover */
       }
       .title {
         position: absolute;
@@ -136,34 +156,36 @@
         position: absolute;
         left: 59%;
         top: 75%;
-        border-radius: 3px;
-        width: 169px;
+        width: 20%;
+        font-family: "Kumbh Sans";
+        height: 40px;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        margin-left: 50px;
+        border-radius: 5px;
         text-align: center;
         background-color: hsl(26, 100%, 55%);
       }
       .add img {
         margin-right: 5px;
-        width: 8%;
+        color: hsl(0, 0%, 100%);
+        width: 6%;
         text-decoration: none;
       }
-      .operator {
+      .icon-container {
         position: absolute;
         top: 75%;
         left: 50%;
         width: 169px;
-        height: 44px;
-        text-align: center;
-        border-radius: 3px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: hsl(240, 17%, 90%);
       }
-      .operator img {
-        width: 7%;
-        margin: 20px;
-      }
-      .cero {
-        position: absolute;
-        text-align: center;
-        margin-top: 20px;
+      .icon {
+        margin: 0px 10px;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -202,15 +224,14 @@
           <span class="">$125.00</span> <span class="discount">50%</span>
         </h4>
         <h5 class="price2">$250.00</h5>
-        <a href="" class="add"
-          ><img src="./images/icon-cart.svg" alt="" />Add to cart</a
-        >
-        <div class="operator">
-          <span class="menos"
-            ><img src="./images/icon-minus.svg" alt=""
-          /></span>
-          <span class="cero">0</span>
-          <span class="mas"><img src="./images/icon-plus.svg" alt="" /></span>
+
+        <button class="add">
+          <img src="./images/icon-cart.svg" alt="" />Add to cart
+        </button>
+        <div class="icon-container">
+          <span class="icon"><img src="./images/icon-minus.svg" alt="" /></span>
+          <span class="icon">0</span>
+          <span class="icon"><img src="./images/icon-plus.svg" alt="" /></span>
         </div>
         <img src="./images/image-product-1.jpg" alt="Shoes" class="imagen" />
       </div>
